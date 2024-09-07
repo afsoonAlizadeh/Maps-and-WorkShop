@@ -1,0 +1,33 @@
+<div class="wraper">
+  <app-map [markersList]="markers"></app-map>
+</div>
+<aside>
+  <div id="sidebar">
+    <div class="toggle-btn" (click)="toggleSidebar()">
+      <img
+        *ngIf="!isOpen"
+        src="./../../../../../assets/img/svg/chevron-l.svg"
+        alt="chevron-d"
+      />
+      <img
+        *ngIf="isOpen"
+        src="./../../../../../assets/img/svg/chevron-r.svg"
+        alt="chevron-u"
+      />
+    </div>
+    <app-logo [isDelete]="isDetail" (isClose)="isDetailOpen($event)"></app-logo>
+    <ul class="insights-results" *ngIf="list && list.length && !isDetail">
+      <li *ngFor="let detail of list">
+        <app-work-shop-list
+          [detail]="detail"
+          (detailId)="getDetailId($event)"
+        ></app-work-shop-list>
+      </li>
+    </ul>
+    <div *ngIf="isDetail">
+      <app-detail-work-shop [detailInfo]="detailInfo"></app-detail-work-shop>
+    </div>
+  </div>
+
+  <a [routerLink]="'/'" id="backToMainPage">بازگشت به صفحه اصلی</a>
+</aside>

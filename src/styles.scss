@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 200;
+  src: url(./assets/font/iransans/woff/IRANSansWeb\(FaNum\).woff);
+  src: url(./assets/font/iransans/ttf/IRANSansWeb\(FaNum\).ttf);
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 300;
+  src: url(./assets/font/iransans/eot/IRANSansWeb\(FaNum\)_Light.eot);
+  src: url(./assets/font/iransans/woff/IRANSansWeb\(FaNum\)_Light.woff);
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 400;
+  src: url(./assets/font/iransans/eot/IRANSansWeb\(FaNum\)_Medium.eot);
+  src: url(./assets/font/iransans/woff/IRANSansWeb\(FaNum\)_Medium.woff);
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 500;
+  src: url(./assets/font/iransans/eot/IRANSansWeb\(FaNum\)_Bold.eot);
+  src: url(./assets/font/iransans/woff/IRANSansWeb\(FaNum\)_Bold.woff);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: IRANSans, sans-serif !important;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: IRANSans, sans-serif !important;
+  margin: 0;
+  padding: 0;
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+::-webkit-scrollbar-thumb {
+  background: #212b36;
+  border-radius: 2px;
+}
